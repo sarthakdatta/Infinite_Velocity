@@ -6,6 +6,7 @@ import { MdPerson } from "react-icons/md";
 import { IoIosRocket } from "react-icons/io";
 import { ArrowUpRight } from "lucide-react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,12 +47,12 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <div className="flex items-center">
               
-              <a 
+              <Link
                 href="/" 
                 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-purple-200 bg-clip-text text-transparent hover:from-purple-100 hover:to-purple-300 transition-all duration-300"
               >
                 Infinite Velocity
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Navigation */}
@@ -129,24 +130,26 @@ export default function Home() {
               </button>
               
               <div className="flex items-center gap-6 mt-2 sm:mt-0 sm:ml-4">
-                <a
+                
+                <Link
                   href="https://www.youtube.com/yourchannel"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-purple-200 hover:text-red-500 transition-all duration-300 transform hover:scale-110"
                   aria-label="YouTube Channel"
-                >
+                
+                  />
                   <FaYoutube size={32} />
-                </a>
-                <a
+                
+                <Link
                   href="https://www.tiktok.com/@yourhandle"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-purple-200 hover:text-blue-400 transition-all duration-300 transform hover:scale-110"
                   aria-label="TikTok Profile"
-                >
+                />
                   <FaTiktok size={32} />
-                </a>
+                
               </div>
             </div>
           </div>
@@ -273,9 +276,9 @@ export default function Home() {
             </div>
             
             <div className="flex space-x-6">
-              <a href="#" className="hover:text-purple-400 transition-colors">About Us</a>
-              <a href="#" className="hover:text-purple-400 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-purple-400 transition-colors">Terms of Service</a>
+              <Link href="#" className="hover:text-purple-400 transition-colors">About Us </Link>
+              <Link href="#" className="hover:text-purple-400 transition-colors">Privacy Policy</Link>
+              <Link href="#" className="hover:text-purple-400 transition-colors">Terms of Service</Link>
             </div>
           </div>
           
@@ -283,12 +286,12 @@ export default function Home() {
             <p>&copy; {new Date().getFullYear()} Infinite Velocity. All rights reserved.</p>
             
             <div className="flex space-x-4 mt-4 md:mt-0">
-              <a href="#" className="hover:text-purple-400 transition-colors">
+              <Link href="#" className="hover:text-purple-400 transition-colors">
                 <FaYoutube size={20} />
-              </a>
-              <a href="#" className="hover:text-purple-400 transition-colors">
+              </Link>
+              <Link href="#" className="hover:text-purple-400 transition-colors">
                 <FaTiktok size={20} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

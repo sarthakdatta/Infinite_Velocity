@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import { FaYoutube, FaBook, FaTiktok, FaChevronDown, FaArrowUp } from "react-icons/fa";
 import { MdPerson } from "react-icons/md";
 import { IoIosRocket } from "react-icons/io";
